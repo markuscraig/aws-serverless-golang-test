@@ -1,0 +1,14 @@
+service: serverless-golang
+package:
+  artifact: handler.zip
+provider:
+  name: aws
+  runtime: python2.7
+  stage: ${env:ENV}
+  region: ${env:AWS_DEFAULT_REGION}
+  profile: ${env:AWS_PROFILE}
+functions:
+  hello:
+    handler: handler.Handle
+    events:
+      - http: GET hello

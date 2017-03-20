@@ -1,0 +1,4 @@
+.serverless/*
+*.so
+handler.zip
+deploy.out.yaml
