@@ -7,10 +7,10 @@
 * Creates an AWS API Gateway endpoint to call the Go lambda function
 * Deploys to AWS using two different methods...
   1. AWS CloudFormation SAM
-    * [https://aws.amazon.com/about-aws/whats-new/2016/11/introducing-the-aws-serverless-application-model/]
+     * [https://aws.amazon.com/about-aws/whats-new/2016/11/introducing-the-aws-serverless-application-model/]
   2. Serverless
-    * [https://serverless.com/]
-    * simpler alternative; uses CloudFormation
+     * [https://serverless.com/]
+     * simpler alternative; uses CloudFormation
 
 ## Dependencies
 
