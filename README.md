@@ -7,10 +7,10 @@
 * Creates an AWS API Gateway endpoint to call the Go lambda function
 * Deploys to AWS using two different methods...
   1. AWS CloudFormation SAM
-    # [https://aws.amazon.com/about-aws/whats-new/2016/11/introducing-the-aws-serverless-application-model/]
+    * [https://aws.amazon.com/about-aws/whats-new/2016/11/introducing-the-aws-serverless-application-model/]
   2. Serverless
-    # [https://serverless.com/]
-    # simpler alternative; uses CloudFormation
+    * [https://serverless.com/]
+    * simpler alternative; uses CloudFormation
 
 ## Dependencies
 
@@ -27,8 +27,6 @@
 * Packages the compiled handler for deployment as an AWS lambda function (handler.zip)
 
 ## Deploy using CloudFormation
-
-# Deploy
 
 ```bash
 # create the s3 bucket for deployment data
@@ -47,7 +45,7 @@ $ aws cloudformation deploy \
       --stack-name <STACK-NAME>
 ```
 
-# Test
+## Test CloudFormation Deployment
 
 ```bash
 # get the end-point url
@@ -61,7 +59,6 @@ $ curl -v <URL>
 
 ## Deploy using Serverless
 
-# Deploy
 ```bash
 $ sls deploy
 
@@ -83,7 +80,7 @@ functions:
   hello: serverless-golang-dev-hello
 ```
 
-# Test
+# Test Serverless Deployment
 
 ```bash
 # get the end-point url
