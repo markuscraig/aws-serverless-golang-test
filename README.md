@@ -80,7 +80,7 @@ functions:
   hello: serverless-golang-dev-hello
 ```
 
-# Test Serverless Deployment
+## Test Serverless Deployment
 
 ```bash
 # get the end-point url
